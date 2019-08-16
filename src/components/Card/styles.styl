@@ -1,0 +1,32 @@
+@import "../../assets/styles/variables.styl"
+
+.card
+  border-radius 6px
+  flex-direction column
+  border 1px solid $color-border
+  margin-bottom 10px
+  padding 10px
+  cursor pointer
+
+  &__title
+    color $black-color
+    font-weight bold
+    font-size 0.8rem
+    padding 0 0 25px
+
+  &__description
+    color $black-color
+    font-size 0.8rem
+    width 80%
+    margin-bottom 20px
+
+  .btns-for-actions
+    justify-content flex-end
+
+    .delete-card, .edit-card, .submit-edit, .cancel-edit
+      background rgba(70,70,70,0)
+      border none
+      color #4c4c4c
+
+    .submit-edit, .cancel-edit
+      font-size 1.2rem

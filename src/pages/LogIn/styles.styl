@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables.styl"
+
+.login-form
+  display flex
+  flex-direction column
+  width 30%
+  padding 30px
+  border 1px solid $color-border
+  border-radius 10px
+  position absolute
+  top: 30%
+  left 50%
+  transform translate(-50%, -50%)
+
+  .form-title
+    text-align center
+    font-size 1.2rem
+    color #444444
+
+  .error-email, .error-pass
+    padding-top 10px
+    font-size 0.7rem
+    color red
